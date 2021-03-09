@@ -58,14 +58,14 @@ async def permalink(mention):
 async def _(event):
     if event.fwd_from:
         return
-    mentions = "**Bots in this Channel**: \n"
+    mentions = "**Babu 🕵️ in this Channel**: \n"
     input_str = event.pattern_match.group(1)
     to_write_chat = await event.get_input_chat()
     chat = None
     if not input_str:
         chat = to_write_chat
     else:
-        mentions = "Bots in {} channel: \n".format(input_str)
+        mentions = "Babu in 🕵️ {} channel: \n".format(input_str)
         try:
             chat = await bot.get_entity(input_str)
         except Exception as e:
@@ -108,7 +108,7 @@ async def log(log_text):
 @register(outgoing=True, pattern="^.kickme$")
 async def kickme(leave):
     """ Basically it's .kickme command """
-    await leave.edit("GC NYA JELEK ASU CABUT AH KIWW 🐨")
+    await leave.edit("JELEK ASU CABUT AH CROTTT 🚮")
     await leave.client.kick_participant(leave.chat_id, 'me')
 
 
@@ -121,7 +121,7 @@ async def unmute_chat(unm_e):
         await unm_e.edit('`Running on Non-SQL Mode!`')
         return
     unkread(str(unm_e.chat_id))
-    await unm_e.edit("```Unmuted this chat Successfully```")
+    await unm_e.edit("```Biarin Deh Kasian Biar Bunyi```")
     await sleep(2)
     await unm_e.delete()
 
@@ -136,7 +136,7 @@ async def mute_chat(mute_e):
         return
     await mute_e.edit(str(mute_e.chat_id))
     kread(str(mute_e.chat_id))
-    await mute_e.edit("`Shush! This chat will be silenced!`")
+    await mute_e.edit("`PANTEK! Berisik Aja Anjeng Notifikasinya!`")
     await sleep(2)
     await mute_e.delete()
     if BOTLOG:

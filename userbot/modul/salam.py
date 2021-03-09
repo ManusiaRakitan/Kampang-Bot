@@ -12,11 +12,11 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**LU KONTOL**")
+    await typew.edit(f"**LU KYK KONTOL**")
     sleep(3)
-    await typew.edit("`KONTOL KONTOL KONTOL!!!`")
+    await typew.edit("`KONTOL KONTOL LU KONTOL!!!`")
     sleep(3)
-    await typew.edit("`DASAR KEPALA KONTOL!!!`")
+    await typew.edit("`DASAR LU KEPALA KONTOL!!!`")
 # Owner @Si_Dian
 
 
@@ -26,7 +26,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**JAKA SEMBUNG BAWA GOLOK**")
     sleep(3)
-    await typew.edit("`NIMBRUNG GOBLOKK!!!`")
+    await typew.edit("`NIMBRUNG LAH GOBLOKK!!!`")
 # Owner @Si_Dian
 
 
@@ -36,7 +36,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**JAKA SEMBUNG BAWA GOLOK**")
     sleep(3)
-    await typew.edit("`NIMBRUNG GOBLOKK!!!`")
+    await typew.edit("`NIMBRUNG LAH GOBLOKK!!!`")
 # Owner @Si_Dian
 
 
@@ -44,9 +44,9 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**Hallo KIMAAKK SAYA {DEFAULTUSER}**")
+    await typew.edit(f"**Hallo PANTEK SAYA {DEFAULTUSER}**")
     sleep(2)
-    await typew.edit("`KONTOLLL.....`")
+    await typew.edit("`LU KONTOLLL.....`")
 # Owner @Si_Dian
 
 
@@ -54,9 +54,9 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**Hallo KIMAKK SAYA {DEFAULTUSER}**")
+    await typew.edit(f"**Hallo PANTEK SAYA {DEFAULTUSER}**")
     sleep(2)
-    await typew.edit("`KONTOLLL.....`")
+    await typew.edit("`LU KONTOLLL.....`")
 # Owner @Si_Dian
 
 
@@ -64,9 +64,9 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`Astaghfirulloh anda berdosa sekali...`")
+    await typew.edit("`Astaghfirulloh kok anda berdosa sekali...`")
     sleep(1)
-    await typew.edit("`Waallaikumsalam Sayang......`")
+    await typew.edit("`Wa'allaikumussalam Sayang......`")
 # Owner @Si_Dian
 
 
@@ -74,9 +74,9 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`Astaghfirulloh anda berdosal sekali...`")
+    await typew.edit("`Astaghfirulloh kok anda berdosal sekali...`")
     sleep(1)
-    await typew.edit("`Waallaikumsalam Sayang.....`")
+    await typew.edit("`Wa'allaikumussalam Sayang.....`")
 # Owner @Si_Dian
 
 

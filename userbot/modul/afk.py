@@ -89,7 +89,7 @@ async def type_afk_is_not_true(notafk):
     global afk_end
     user = await bot.get_me()  # pylint:disable=E0602
     last = user.last_name
-    if last and last.endswith(" [ OFF PANTEK ]"):
+    if last and last.endswith(" [ OFF ]"):
         last1 = last[:-12]
     else:
         last1 = ""

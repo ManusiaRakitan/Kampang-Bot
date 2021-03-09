@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/Musthofaalfian/Kampang-Bot",
   "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02",
-  "success_url": "https://t.me/mixiologist",
+  "success_url": "https://t.me/ancientbatavia",
   "stack": "container",
   "env": {
     "API_KEY": {

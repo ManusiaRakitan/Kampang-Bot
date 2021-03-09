@@ -1,6 +1,6 @@
 {
-  "name": "BOT-KAMPANG",
-  "description": "[BOT-KAMPANG] A modular Telegram userbot running on Python 3.7+ with an sqlalchemy database, which can be coupled up with Mongo DB and a Redis backend",
+  "name": "ANCIENT BOT KAMPANG",
+  "description": "[ANCIENT BOT KAMPANG] A modular Telegram userbot running on Python 3.7+ with an sqlalchemy database, which can be coupled up with Mongo DB and a Redis backend",
   "logo": "https://telegra.ph/file/ecacf51f2ee342ba5d3e1.jpg",
   "keywords": [
     "telegram",

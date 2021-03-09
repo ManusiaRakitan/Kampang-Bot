@@ -23,10 +23,10 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    "`#AFK 🐨\n Maaf Boss Saya Sedang NGENTOT!!`",
-    "`#AFK 🐨\n Maaf Boss Saya Sedang NGENTOT\n Tolong Jangan Ganggu Saya!!",
-    "`#AFK 🐨\n Saya Sedang NGENTOT\n Jangan Ganggu Saya !!!!!`",
-    "`#AFK 🐨\n Maaf Boss Saya Sedang NGENTOT!!`",
+    "`#AFK ❌\n Maaf SiBoss Ga Punya KUOTA!!`",
+    "`#AFK ❌\n Maaf SiBoss Ga Punya KUOTA\n Tolong Jangan Ganggu Saya!!",
+    "`#AFK ❌\n Saya Sedang NGANGGUR\n Jangan Ganggu Saya !!!!!`",
+    "`#AFK ❌\n Maaf Si Boss Sedang NGANGGUR!!`",
 ]
 
 
@@ -61,16 +61,16 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"**AFK 🐨!**\nSaya NGENTOT Dulu Bro...\
+        await afk_e.edit(f"**AFK ❌!**\nSaya NGANGGUR Mulu Bro...\
         \nReason: `{string}`")
     else:
-        await afk_e.edit("**AFK 🐨!**\nSaya NGENTOT Dulu Bro...")
+        await afk_e.edit("**AFK ❌!**\nSaya NGANGGUR Mulu Bro...")
     if user.last_name:
-        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name + " [ NGENTOT ]"))
+        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name + " [ OFFLINE ]"))
     else:
-        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=" [ NGENTOT ]"))
+        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=" [ OFFLINE ]"))
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nGii Ngentot nich!")
+        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nGii Nganggur nich!")
     ISAFK = True
     afk_time = datetime.now()  # pylint:disable=E0602
     raise StopPropagation
@@ -89,7 +89,7 @@ async def type_afk_is_not_true(notafk):
     global afk_end
     user = await bot.get_me()  # pylint:disable=E0602
     last = user.last_name
-    if last and last.endswith(" [ OFF ASU ]"):
+    if last and last.endswith(" [ OFF PANTEK ]"):
         last1 = last[:-12]
     else:
         last1 = ""
@@ -97,7 +97,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.respond("**OK Saya Udah CROTTTTT....**")
+        msg = await notafk.respond("**OK Saya Udah So SOKAPPP....**")
         time.sleep(3)
         await msg.delete()
         await notafk.client(UpdateProfileRequest(first_name=user.first_name, last_name=last1))
@@ -165,7 +165,7 @@ async def mention_afk(mention):
                 afk_since = f"`{int(seconds)}s`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"Saya NGENTOT {afk_since} Yg Lalu.\
+                    await mention.reply(f"Saya SO SIBUK... {afk_since} Yg Lalu.\
                         \nReason: `{AFKREASON}`")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
